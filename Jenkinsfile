@@ -22,7 +22,8 @@ pipeline {
             steps {
               
               echo '>>> Start Deployment'
-              
+              cd /var/lib/jenkins/workspace/Pipeline-Test01/target/
+              cp *.jar /tmp
                echo '>>> Deployment Successsssssssssssssssss'
                }
                    }
