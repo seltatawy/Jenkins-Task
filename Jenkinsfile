@@ -5,8 +5,9 @@ pipeline {
             steps {
               // sh "mvn clean verify" 
               echo '>>> Start Build'
-               sh 'mvn -Dmaven.test.failure.ignore=true install'
-               echo '>>> Build Success'
+              // sh 'mvn -Dmaven.test.failure.ignore=true install'
+                sh 'mvn clean install'
+               echo '>>> Build Successsssssssssssssssss'
                 //junit 'target/surefire-reports/**/*.xml'
             }
         }
