@@ -9,23 +9,6 @@ pipeline {
               echo '>>> End getting SCM code'
             }
         }
-        stage('Build') { 
-            steps {
-                // 
-                echo 'Build completed'
-            }
-        }
-        stage('Test') { 
-            steps {
-                // 
-                echo 'Test Completed'
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                // 
-                echo 'Deployment completed'
-            }
-        }
+        
     }
 }
