@@ -3,14 +3,28 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-              // sh "mvn clean verify" 
+              
               echo '>>> Start Build'
-              // sh 'mvn -Dmaven.test.failure.ignore=true install'
-                sh 'mvn clean install'
+              sh 'mvn clean install'
                echo '>>> Build Successsssssssssssssssss'
-                //junit 'target/surefire-reports/**/*.xml'
-            }
-        }
+               }
+                   }
+        stage('Test') { 
+            steps {
+              
+              echo '>>> Start Testinggggggggggggg'
+              sh 'mvn test'
+               echo '>>> Test Successsssssssssssssssss'
+               }
+                   }
         
+        stage('Deploy') { 
+            steps {
+              
+              echo '>>> Start Deployment'
+              
+               echo '>>> Deployment Successsssssssssssssssss'
+               }
+                   }
     }
 }
