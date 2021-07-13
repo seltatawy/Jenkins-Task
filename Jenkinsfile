@@ -23,7 +23,11 @@ pipeline {
               
               echo '>>> Start Deployment'
              sh 'cd /var/lib/jenkins/workspace/Pipeline-Test01/target/'
-             sh 'cp *.jar /tmp'
+             sh 'find ./ -name "*.jar" -print0 | xargs -0 cp -t /jarfile/'
+               // sh 'Jar-file-name=${find ./ -name "*.jar" -print0}'
+            // echo '/jar/*.jar'
+                echo 'file moved to "/jarfile/*.jar"'
+            // sh 'cp *.jar /tmp'
                echo '>>> Deployment Successsssssssssssssssss'
                }
                    }
