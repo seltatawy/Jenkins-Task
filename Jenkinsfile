@@ -22,7 +22,7 @@ pipeline {
             steps {
               
               echo '>>> Start Deployment'
-                sh 'cd /jarfile'
+               // sh 'cd /jarfile'
 	        sh 'rm -rfv /jarfile/*'
                 sh 'cd /var/lib/jenkins/workspace/Pipeline-Test01/target/'
                 sh 'cp *.jar /jarfile'
