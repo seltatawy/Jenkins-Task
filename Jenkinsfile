@@ -17,7 +17,12 @@ pipeline {
                echo '>>> Test Successsssssssssssssssss'
                }
                    }
-        
+        stage('Deploy_Approval'){
+          steps {
+              timeout(time: 10, unit: 'MINUTES') {
+                input(id: "Deploy or not", message: "Deploy ${params.project_name}?", ok: 'Deploy')
+              }
+        }
          stage('Deploy') { 
             steps {
               
