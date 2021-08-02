@@ -23,6 +23,7 @@ pipeline {
                 input(id: "Deploy or not", message: "Deploy ${params.project_name}?", ok: 'Deploy')
               }
         }
+        }
          stage('Deploy') { 
             steps {
               
