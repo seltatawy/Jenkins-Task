@@ -18,11 +18,11 @@ pipeline {
                }
                    }
         
-        stage('Deploy approval'){
-                     input "Deploy ?" OK
+        stage('Deploy_approval'){
+                     input "Deploy ?"
             
         }
-        stage('OK') { 
+        stage('Deploy') { 
             steps {
               
               echo '>>> Start Deployment'
