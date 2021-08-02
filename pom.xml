@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.goodrain</groupId>
     <artifactId>DXC-sadad</artifactId>
-    <version>0.0.17</version>
+    <version>0.0.1</version>
     <name>DXC-sadad</name>
     <description>Spring Boot Demo for Goodrain</description>
     <profiles>
