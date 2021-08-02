@@ -19,9 +19,10 @@ pipeline {
                    }
         
         stage('Deploy approval'){
-                     input "Deploy ?"
+                     input "Deploy ?" OK
             
-        stage('Deploy approval') { 
+        }
+        stage('OK') { 
             steps {
               
               echo '>>> Start Deployment'
@@ -31,6 +32,6 @@ pipeline {
             
                echo '>>> Deployment Successsssssssssssssssss'
                }
-        }              }
+        }              
     }
 }
