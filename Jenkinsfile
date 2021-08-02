@@ -20,8 +20,8 @@ pipeline {
         
         stage('Deploy approval'){
                      input "Deploy ?"
-            }
-        stage('Deploy') { 
+            
+        stage('Deploy approval') { 
             steps {
               
               echo '>>> Start Deployment'
@@ -31,6 +31,6 @@ pipeline {
             
                echo '>>> Deployment Successsssssssssssssssss'
                }
-                   }
+        }              }
     }
 }
