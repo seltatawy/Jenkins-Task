@@ -18,6 +18,9 @@ pipeline {
                }
                    }
         
+        stage('Deploy approval'){
+                     input "Deploy ?"
+            }
         stage('Deploy') { 
             steps {
               
