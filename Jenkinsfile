@@ -18,9 +18,11 @@ pipeline {
                }
                    }
         
-        stage('Deploy_approval'){
-                     input "Deploy ?"
-            
+        stage('Deploy_approval')
+        {
+        steps{
+                     input message "Deploy ?"
+        }
         }
         stage('Deploy') { 
             steps {
