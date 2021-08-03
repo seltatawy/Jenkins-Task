@@ -29,7 +29,8 @@ pipeline {
               
               echo '>>> Start Deployment'
                sh 'rm -rfv /jarfile/*'
-               sh 'cp /var/lib/jenkins/workspace/Pipeline-Test01/target/*.jar /jarfile'
+              // sh 'cp /var/lib/jenkins/workspace/Pipeline-Test01/target/*.jar /jarfile'
+                sh 'cp {WORKSPACE}/target/*.jar /jarfile'
                echo 'file moved to "/jarfile/*.jar"'
             
                echo '>>> Deployment Successsssssssssssssssss'
